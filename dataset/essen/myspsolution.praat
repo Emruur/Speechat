@@ -43,7 +43,7 @@ showtext = 'keep_Soundfiles_and_Textgrids'
 minpause = 'minimum_pause_duration'
  
 # read files
-soundin$ = "/Users/emreugur/Documents/Dev/Code/CS/CS491/Speechat/recording.wav"
+soundin$ = "C:\Users\emreu\OneDrive\Belgeler\Code\Speechat\recording.wav"
  Read from file... 'soundin$'
 
 

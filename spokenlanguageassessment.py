@@ -1,8 +1,3 @@
-
-
-
-
-
 import sys
 
 import warnings
@@ -223,10 +218,12 @@ p=pa0
 c=pa9
 a=pa00
 bi=myspp(p,c,a)
-if bi<levvel:
+
+'''if bi<levvel:
 	mysppron(p,c,a)
 	input("Try again, unnatural-sounding speech detected. No further result. Press any key to exit.")
-	exit()
+	exit()'''
+
 
 mysppron(p,c,a)
 myspgend(p,c,a)
@@ -244,11 +241,10 @@ model = pickle.load(open(filename, 'rb'))
 predictions = model.predict(x)
 print("58% accuracy    ",predictions)
 
-#filename=pathy+"/"+"essen"+"/"+"ETC_model.sav"
-
-#model = pickle.load(open(filename, 'rb'))
-#predictions = model.predict(x)
-#print("70% accuracy    ",predictions)
+filename=pathy+"/dataset/"+"essen"+"/"+"ETC_model.sav"
+model = pickle.load(open(filename, 'rb'))
+predictions = model.predict(x)
+print("70% accuracy    ",predictions)
 filename=pathy+"/"+"dataset"+"/"+"essen"+"/"+"KNN_model.sav"
 
 model = pickle.load(open(filename, 'rb'))
@@ -273,19 +269,27 @@ model = pickle.load(open(filename, 'rb'))
 predictions = model.predict(x)
 print("64% accuracy    ",predictions)
 
-#filename=pathy+"/"+"essen"+"/"+"PCA_model.sav"
+#FIXME NOT FITTED ERROR BS
+'''
+filename=pathy+"/dataset/"+"essen"+"/"+"PCA_model.sav"
 
-#model = pickle.load(open(filename, 'rb'))
-#predictions = model.predict(x)
-#print("70% accuracy    ",predictions)
+model = pickle.load(open(filename, 'rb'))
+predictions = model.predict(x)
+print("70% accuracy    ",predictions)
+'''
 
-#filename=pathy+"/"+"essen"+"/"+"RFE_model.sav"
+'''
+filename=pathy+"/dataset/"+"essen"+"/"+"RFE_model.sav"
 
-#model = pickle.load(open(filename, 'rb'))
-#predictions = model.predict(x)
-#print("70% accuracy    ",predictions)
+model = pickle.load(open(filename, 'rb'))
+predictions = model.predict(x)
+print("70% accuracy    ",predictions)
+
+
+'''
 
 filename=pathy+"/"+"dataset"+"/"+"essen"+"/"+"SVN_model.sav"
+
 
 model = pickle.load(open(filename, 'rb'))
 predictions = model.predict(x)

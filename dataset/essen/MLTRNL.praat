@@ -70,7 +70,7 @@ minpause = 'minimum_pause_duration'
  
 
 #FIXME fix soundi param passing
-soundin$= "/Users/emreugur/Documents/Dev/Code/CS/CS491/Speechat/recording.wav"
+soundin$= "C:\Users\emreu\OneDrive\Belgeler\Code\Speechat\recording.wav"
 # read files
 Read from file... 'soundin$'
 
